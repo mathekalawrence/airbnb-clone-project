@@ -17,4 +17,5 @@
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
+ key entities required for the project, such as Users, Properties, Bookings, Reviews, and Payments.
 
