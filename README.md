@@ -17,11 +17,24 @@
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
+The database is designed to efficiently manage user data, property listings, bookings, reviews, and payment transactions. It ensures data integrity, scalability, and smooth interaction between entities across the system.
+--Key Entities and Relationships--
 1. Properties.
+Contains details about each property listed on the platform.
+Important Fields:
+id – Unique identifier for the property.
+user_id – Foreign key referencing the property owner (User).
+title – Name or short description of the property.
+location – Address or geographical area.
+price_per_night – Cost per night of stay.
+Relationships:
+A property belongs to a user (owner).
+A property can have multiple bookings and reviews.
+
 2. Users.
-3. Reviews
-4. Bookings
-5. Payments.
+4. Reviews
+5. Bookings
+6. Payments.
 
 **Feature Breakdown**
 1. User Authentication. This feature allows users to securely register, log in, and manage their accounts. It ensures that only authorized users can access sensitive data such as booking and payment details. Authentication is implemented with secure password hashing and token-based sessions to maintain data privacy and integrity.
@@ -33,29 +46,24 @@
 
 **API Security**
 Securing the backend APIs is a critical part of ensuring that the application remains safe, reliable, and trustworthy. The API acts as the gateway between the client and the server, handling sensitive data such as user information, bookings, and payments; therefore, strong security measures must be enforced.
-Key Security Measures
+**Key Security Measures**
 Authentication
 Only verified users or systems should be able to access the API.
 JWT (JSON Web Tokens) or OAuth 2.0 is used to ensure that users are properly authenticated before accessing protected endpoints.
 This prevents unauthorized access and identity spoofing.
-
 Authorization
 After authentication, users are granted access only to the resources and actions they are allowed to perform.
 Role-based access control (RBAC) ensures that normal users, admins, and property owners have separate permission levels.
 This helps prevent privilege escalation attacks.
-
 Rate Limiting
 To prevent abuse and denial-of-service (DoS) attacks, the API enforces rate limiting.
 This limits the number of requests a single client can make in a given period.
 It ensures server stability and protects against malicious overuse.
-
 Input Validation and Sanitization
 All incoming data is validated and sanitized to prevent injection attacks such as SQL Injection or Cross-Site Scripting (XSS).
 This ensures only clean, expected data is processed by the API.
-
 Data Encryption (HTTPS & TLS)
 All API communication occurs over HTTPS using TLS encryption, ensuring that data exchanged between the client and server cannot be intercepted or tampered with.
-
 Secure Storage of Secrets
 API keys, database credentials, and tokens are stored securely using environment variables or secret management tools, never hardcoded into the source code.
 
