@@ -24,11 +24,11 @@
 5. Payments.
 
 **Feature Breakdown**
-1. User Authentication
-2. Booking Management System
-3. Property Management
-4. Database OPtimization.
-5. Payment Processing.
-6. Property Review System.
+1. User Authentication. This feature allows users to securely register, log in, and manage their accounts. It ensures that only authorized users can access sensitive data such as booking and payment details. Authentication is implemented with secure password hashing and token-based sessions to maintain data privacy and integrity.
+2. Booking Management System. The booking management system enables users to browse available properties, check availability, and make reservations seamlessly. It handles scheduling conflicts, booking confirmations, and cancellations while keeping both users and property owners informed in real-time. This ensures a smooth and efficient reservation experience.
+3. Property Management. Property owners can list, update, and manage their rental properties through this feature. It includes tools for uploading property images, setting prices, and managing availability calendars. This system empowers property owners to maintain accurate and attractive listings that attract potential guests.
+4. Database OPtimization. The project leverages efficient database indexing and query optimization techniques to ensure fast data retrieval and scalability. By minimizing redundant data and improving query performance, the system can handle a growing number of users and bookings without performance degradation. This results in a smoother user experience and improved application reliability.
+5. Payment Processing. This feature securely handles user payments for bookings through trusted payment gateways. It supports multiple payment methods and ensures transactions are encrypted and verified. The integration simplifies financial operations while maintaining compliance with security standards like PCI-DSS(Payment Card Industry Data Security Standard).
+6. Property Review System. Users can leave feedback and ratings for properties they’ve stayed in, fostering trust and transparency in the platform. Property reviews help future guests make informed decisions and encourage property owners to maintain high-quality standards. This system enhances community engagement and credibility.
 
 
