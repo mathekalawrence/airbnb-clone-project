@@ -92,6 +92,7 @@ A booking can have one payment record.
 **API Security**
 
 Securing the backend APIs is a critical part of ensuring that the application remains safe, reliable, and trustworthy. The API acts as the gateway between the client and the server, handling sensitive data such as user information, bookings, and payments; therefore, strong security measures must be enforced.
+
 **Key Security Measures**
 
 Authentication
@@ -99,23 +100,28 @@ Authentication
 Only verified users or systems should be able to access the API.
 JWT (JSON Web Tokens) or OAuth 2.0 is used to ensure that users are properly authenticated before accessing protected endpoints.
 This prevents unauthorized access and identity spoofing.
+
 Authorization
 
 After authentication, users are granted access only to the resources and actions they are allowed to perform.
 Role-based access control (RBAC) ensures that normal users, admins, and property owners have separate permission levels.
 This helps prevent privilege escalation attacks.
+
 Rate Limiting
 
 To prevent abuse and denial-of-service (DoS) attacks, the API enforces rate limiting.
 This limits the number of requests a single client can make in a given period.
 It ensures server stability and protects against malicious overuse.
+
 Input Validation and Sanitization
 
 All incoming data is validated and sanitized to prevent injection attacks such as SQL Injection or Cross-Site Scripting (XSS).
 This ensures only clean, expected data is processed by the API.
+
 Data Encryption (HTTPS & TLS)
 
 All API communication occurs over HTTPS using TLS encryption, ensuring that data exchanged between the client and server cannot be intercepted or tampered with.
+
 Secure Storage of Secrets
 
 API keys, database credentials, and tokens are stored securely using environment variables or secret management tools, never hardcoded into the source code.
