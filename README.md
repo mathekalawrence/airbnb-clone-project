@@ -17,6 +17,7 @@
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
+
 The database is designed to efficiently manage user data, property listings, bookings, reviews, and payment transactions. It ensures data integrity, scalability, and smooth interaction between entities across the system.
 --Key Entities and Relationships--
 1. Properties.
@@ -89,6 +90,7 @@ A booking can have one payment record.
 6. Property Review System. Users can leave feedback and ratings for properties they’ve stayed in, fostering trust and transparency in the platform. Property reviews help future guests make informed decisions and encourage property owners to maintain high-quality standards. This system enhances community engagement and credibility.
 
 **API Security**
+
 Securing the backend APIs is a critical part of ensuring that the application remains safe, reliable, and trustworthy. The API acts as the gateway between the client and the server, handling sensitive data such as user information, bookings, and payments; therefore, strong security measures must be enforced.
 **Key Security Measures**
 Authentication
