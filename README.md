@@ -32,6 +32,46 @@
 6. Property Review System. Users can leave feedback and ratings for properties they’ve stayed in, fostering trust and transparency in the platform. Property reviews help future guests make informed decisions and encourage property owners to maintain high-quality standards. This system enhances community engagement and credibility.
 
 **API Security**
+Securing the backend APIs is a critical part of ensuring that the application remains safe, reliable, and trustworthy. The API acts as the gateway between the client and the server, handling sensitive data such as user information, bookings, and payments; therefore, strong security measures must be enforced.
+Key Security Measures
+Authentication
+Only verified users or systems should be able to access the API.
+JWT (JSON Web Tokens) or OAuth 2.0 is used to ensure that users are properly authenticated before accessing protected endpoints.
+This prevents unauthorized access and identity spoofing.
+
+Authorization
+After authentication, users are granted access only to the resources and actions they are allowed to perform.
+Role-based access control (RBAC) ensures that normal users, admins, and property owners have separate permission levels.
+This helps prevent privilege escalation attacks.
+
+Rate Limiting
+To prevent abuse and denial-of-service (DoS) attacks, the API enforces rate limiting.
+This limits the number of requests a single client can make in a given period.
+It ensures server stability and protects against malicious overuse.
+
+Input Validation and Sanitization
+All incoming data is validated and sanitized to prevent injection attacks such as SQL Injection or Cross-Site Scripting (XSS).
+This ensures only clean, expected data is processed by the API.
+
+Data Encryption (HTTPS & TLS)
+All API communication occurs over HTTPS using TLS encryption, ensuring that data exchanged between the client and server cannot be intercepted or tampered with.
+
+Secure Storage of Secrets
+API keys, database credentials, and tokens are stored securely using environment variables or secret management tools, never hardcoded into the source code.
+
+**CI/CD Pipeline**
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying code. They ensure that every change made to the codebase is automatically tested and deployed to production with minimal manual intervention. This helps maintain consistent code quality, reduces errors, and speeds up the delivery of new features.
+Implementing a CI/CD pipeline is important because it:
+1. Enables faster and more reliable updates to the project.
+2. Detects bugs early through automated testing.
+3. Ensures that deployments are consistent and repeatable across environments.
+4. Improves collaboration between developers by integrating changes continuously.
+   
+Tools used for CI/CD:
+1. GitHub Actions – for automating testing, building, and deployment workflows directly from GitHub.
+2. Docker – for containerizing the application to ensure consistent environments across development, testing, and production.
+3. Jenkins or GitLab CI/CD – for advanced automation and integration with complex build systems.
+4. AWS CodePipeline or Azure DevOps – for deploying to cloud-based environments efficiently.
 
 
 
