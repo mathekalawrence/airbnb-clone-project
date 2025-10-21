@@ -17,10 +17,18 @@
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 **Database Design**
- key entities required for the project, such as Users, Properties, Bookings, Reviews, and Payments.
+1. Properties.
+2. Users.
+3. Reviews
+4. Bookings
+5. Payments.
+
+**Feature Breakdown**
 1. User Authentication
 2. Booking Management System
 3. Property Management
 4. Database OPtimization.
 5. Payment Processing.
 6. Property Review System.
+
+
