@@ -114,6 +114,7 @@ Secure Storage of Secrets
 API keys, database credentials, and tokens are stored securely using environment variables or secret management tools, never hardcoded into the source code.
 
 **CI/CD Pipeline**
+
 Continuous Integration (CI) and Continuous Deployment (CD) pipelines automate the process of building, testing, and deploying code. They ensure that every change made to the codebase is automatically tested and deployed to production with minimal manual intervention. This helps maintain consistent code quality, reduces errors, and speeds up the delivery of new features.
 Implementing a CI/CD pipeline is important because it:
 1. Enables faster and more reliable updates to the project.
