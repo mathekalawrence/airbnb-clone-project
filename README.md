@@ -31,4 +31,7 @@
 5. Payment Processing. This feature securely handles user payments for bookings through trusted payment gateways. It supports multiple payment methods and ensures transactions are encrypted and verified. The integration simplifies financial operations while maintaining compliance with security standards like PCI-DSS(Payment Card Industry Data Security Standard).
 6. Property Review System. Users can leave feedback and ratings for properties they’ve stayed in, fostering trust and transparency in the platform. Property reviews help future guests make informed decisions and encourage property owners to maintain high-quality standards. This system enhances community engagement and credibility.
 
+**API Security**
+
+
 
