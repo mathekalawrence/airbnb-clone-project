@@ -32,9 +32,53 @@ A property belongs to a user (owner).
 A property can have multiple bookings and reviews.
 
 2. Users.
-4. Reviews
-5. Bookings
-6. Payments.
+Stores information about all registered users, including customers, property owners, and administrators.
+Important Fields:
+id – Unique identifier for each user.
+name – Full name of the user.
+email – Unique email address for login and communication.
+password_hash – Encrypted password for authentication.
+role – Defines the user type (e.g., guest, host, admin).
+Relationships:
+A user can list multiple properties.
+A user can make multiple bookings.
+A user can leave multiple reviews.
+
+3. Reviews
+Captures user feedback and ratings for properties.
+Important Fields:
+id – Unique review identifier.
+user_id – The user who wrote the review.
+property_id – The property being reviewed.
+rating – Numerical rating (like., 1–5 stars).
+comment – Text feedback from the user.
+Relationships:
+A review belongs to a user and a property.
+A property can have multiple reviews.
+
+4. Bookings
+Stores reservation data made by users for specific properties.
+Important Fields:
+id – Unique booking identifier.
+user_id – The user who made the booking.
+property_id – The property being booked.
+check_in – Date of arrival.
+check_out – Date of departure.
+Relationships:
+A booking belongs to both a user and a property.
+A booking can be linked to a payment record.
+
+5. Payments.
+Records payment transactions related to bookings.
+Important Fields:
+id – Unique payment identifier.
+booking_id – References the related booking.
+amount – Total amount paid.
+payment_method – e.g., credit card, PayPal, etc.
+status – Payment status (e.g., pending, completed, failed).
+Relationships:
+A payment belongs to a booking.
+A booking can have one payment record.
 
 **Feature Breakdown**
 1. User Authentication. This feature allows users to securely register, log in, and manage their accounts. It ensures that only authorized users can access sensitive data such as booking and payment details. Authentication is implemented with secure password hashing and token-based sessions to maintain data privacy and integrity.
