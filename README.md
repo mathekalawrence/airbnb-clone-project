@@ -15,3 +15,6 @@
 6. Redis: Used for caching and session management.
 7. Docker: Containerization tool for consistent development and deployment environments.
 8. CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
+
+**Database Design**
+
