@@ -22,4 +22,5 @@
 2. Booking Management System
 3. Property Management
 4. Database OPtimization.
-5. 
+5. Payment Processing.
+6. Property Review System.
